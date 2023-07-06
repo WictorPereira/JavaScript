@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Residência</title>
+</head>
+<body>
+        <h1>Verificador de Brasileiro</h1>
+      Qual seu pais ?  <input type="text" id="txtp">
+      <input type="button" value="Verificar" onclick="calcular()">
+
+      <div id="res">
+        <p>Seu pais aparecerá aqui:</p>
+      </div>
+
+      <script>
+        function calcular(){
+            var pais = window.document.getElementById ('txtp')
+            var res = window.document.getElementById ('res')
+            var paisc = (pais.value)
+
+            res.innerHTML = `<p> Seu pais e :${paisc} </p>`
+
+            if (paisc === 'brasil') {
+                res.innerHTML = `<p> Voce e do (${paisc} )<strong>Nao e estrangeiro.</strong></p>`
+            }else{
+                res.innerHTML = `<p> Voce e do (${paisc})<strong> voce e estrangeiro.</strong></p>`
+            }
+        }
+      </script>
+</body>
+</html>

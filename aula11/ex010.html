@@ -19,7 +19,9 @@
             var txtv = window.document.getElementById('txtvel')
             var res = window.document.getElementById('res')
             var vel = Number (txtv.value)
+
             res.innerHTML = `<p>Sua velocidade atual e de <strong>${vel}Km/h</strong> </p>`
+            
             if (vel > 80){
                 res.innerHTML = `<p>Voce esta <strong>MUlTADO</strong> por excesso de velocidade</p>`
             }
