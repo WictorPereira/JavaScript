@@ -1,3 +1,5 @@
+//OPÇÃO 2:
+
 var c = 1
 do {
     console.log(`passo: ${c}`)
@@ -5,6 +7,8 @@ do {
 } while (c <= 10)
 
 /*
+OPÇÃO 1:
+
 var c = 1
 while (c <=6 ) {
     console.log(`passo: ${c}`)
@@ -14,7 +18,10 @@ while (c <=6 ) {
 
 
 
-/*console.log('boa noite')
+/*
+OPÇÃO ERRADA:
+
+console.log('boa noite')
 console.log('boa noite')
 console.log('boa noite')
 console.log('boa noite')
